@@ -1,0 +1,22 @@
+# vs config
+*.vscode
+
+# build
+*build
+
+# bin
+*bin
+
+# lib
+*lib
+
+# cmake cache file
+*CMakeCache.txt
+*CMakeFiles
+*cmake
+*make
+*Makefile
+
+# idea clion
+*.idea
+*cmake-build-debug

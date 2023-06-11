@@ -17,6 +17,12 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/lib/)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/)
 # add include path
 include_directories(include/)
+# source files
+file(GLOB SOURCES_CXX "src/*.cxx")
+file(GLOB SOURCES_CPP "src/*.cpp")
 # executable list
-add_executable(bubble_sort src/bubble_sort.cpp)
-add_executable(quick_sort src/quick_sort.cpp)
+add_executable(01sort 
+    main.cpp
+    ${SOURCES_CXX}
+    ${SOURCES_CPP}
+)

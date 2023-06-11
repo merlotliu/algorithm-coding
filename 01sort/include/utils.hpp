@@ -1,9 +1,15 @@
 /**
  * @file algorithm-coding/01sort/sort.hpp
 */
+#ifndef SORT__UTILS_HPP_
+#define SORT__UTILS_HPP_
 
 #include <stdio.h>
 #include <string>
+
+namespace lu
+{
+class Sorter;
 
 template<typename DataT>
 void
@@ -22,3 +28,10 @@ print_arr(char * title, DataT arr[], int size) {
     }
     printf("\n");
 }
+
+void
+sort(void * arr, int begin, int end, Sorter * sorter);
+
+} // namespace lu
+
+#endif // SORT__UTILS_HPP_
